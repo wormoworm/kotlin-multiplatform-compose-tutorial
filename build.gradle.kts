@@ -6,3 +6,10 @@ plugins {
     id("com.android.library").apply(false)
     id("org.jetbrains.compose").apply(false)
 }
+
+buildscript {
+    extra.apply {
+        set("ktor_version", "2.3.9")
+        set("moko_version", "0.16.1")
+    }
+}
